@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 1200px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat();
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "lg lg sm"
+    "lg lg sm2"
+    "sm3 lg2 lg2"
+    "sm4 lg2 lg2"
+    ;
+    gap: 30px;
+}
+
+.item{
+    min-height: 150px;
+}
+.lg{
+    background-color: blue;
+    grid-area: lg;
+}
+.sm{
+    background-color: black;
+    grid-area: sm;
+}
+.sm2{
+    background-color: brown;
+    grid-area: sm2;
+}
+.sm3{
+    background-color: brown;
+    grid-area: sm3;
+}
+.sm4{
+    background-color: black;
+    grid-area: sm4;
+}
+.lg2{
+    background-color: green;
+    grid-area: lg2;
+}
